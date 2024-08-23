@@ -30,9 +30,9 @@ jobs:
         with:
           name: dist-files-artifacts
           path: |
-            dist
-            # package.json
-            # index.html
+            dist/*
+            package.json
+            index.html
   deploy:
     needs: build
     runs-on: ubuntu-latest
